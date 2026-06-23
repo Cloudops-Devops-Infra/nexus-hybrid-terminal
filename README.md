@@ -1,4 +1,4 @@
-Markdown# ⚡ Nexus Hybrid Inference Terminal
+# ⚡ Nexus Hybrid Inference Terminal
 
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -46,7 +46,7 @@ The infrastructure isolates the frontend environment entirely within a secure Do
    │ 🦙 LOCAL EDGE ROUTE   │                       │ 🚀 CLOUD ACCELERATOR  │
    ├───────────────────────┤                       ├───────────────────────┤
    │ Bridge Network Target │                       │ Secure TLS Endpoints  │
-   │ host.docker.internal  │                       │ [api.groq.com/openai](https://api.groq.com/openai)   │
+   │ host.docker.internal  │                       │ api.groq.com/openai   │
    │       │               │                       │       │               │
    │       ▼               │                       │       ▼               │
    │ Native Ollama Daemon  │                       │ Groq LPU Compute      │
@@ -68,5 +68,4 @@ Step 3 — Spin Up the Hybrid Interface TerminalExecute the runtime sequence to 
   -p 80:80 \
   --entrypoint streamlit \
   vllm-nexus:latest run app.py --server.port 80 --server.address 0.0.0.0 --server.headless true
-  
-**👨‍💻 Developed by Subash Patra Associate Cloud Engineer**
+👨‍💻 Engineering Core InfoDeveloped by Subash Patra Associate Cloud Engineer
