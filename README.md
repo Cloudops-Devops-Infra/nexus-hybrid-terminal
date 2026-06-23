@@ -46,7 +46,6 @@ graph TD
     style Router fill:#1e0f3c,stroke:#b400ff,stroke-width:2px,color:#d0eeff
     style Ollama fill:#051e14,stroke:#00ff88,stroke-width:1px,color:#d0eeff
     style Groq fill:#1f1f1f,stroke:#00f5ff,stroke-width:1px,color:#d0eeff
-
 ⚙️ Feature Matrix ComparisonOperational MetricLocal Edge RuntimeEnterprise Cloud RuntimePrimary EngineOllama Engine (Native Host Daemon)Groq LPU Compute HardwareToken Cost100% Free / Absolute Zero BillingScaled Developer Tier FrameworkPrivacy ProfileSandbox Isolation (Data never leaves machine)Processed via TLS Encrypted Cloud EndpointsHardware SourceLocal Host CPU / Integrated VRAMMassively Parallel Data-Center GPUsPrimary Use CaseOffline Code Generation & Secure DiagnosticsHigh-Speed Context Processing & Complex Logic📂 Production Repository Layoutnexus-hybrid-terminal/
 ├── app.py                  # Production Hybrid Streamlit Dashboard Architecture
 ├── Dockerfile              # Multi-Stage Container Layer Blueprint
@@ -59,4 +58,6 @@ Step 2 — Compile the Isolated Container LayerBuild your optimized application 
 Step 3 — Spin Up the Hybrid Interface TerminalExecute the runtime sequence to map incoming web traffic seamlessly to Port 80:Bashdocker run --rm --name nexus-app \
   -p 80:80 \
   --entrypoint streamlit \
-  vllm-nexus:latest run app.py --server.port 80 --server.address 0.0.0.0 --server.headless tr
+  vllm-nexus:latest run app.py --server.port 80 --server.address 0.0.0.0 --server.headless true
+
+Developed by Subash Patra - Associate Cloud Engineer.
