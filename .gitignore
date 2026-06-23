@@ -1,0 +1,16 @@
+# Python caching
+__pycache__/
+*.pyc
+
+# Environment variables and secrets
+.env
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large model checkpoints (just in case)
+*.safetensors
+*.bin
+*.json
