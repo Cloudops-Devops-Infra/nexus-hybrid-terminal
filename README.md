@@ -46,17 +46,39 @@ graph TD
     style Router fill:#1e0f3c,stroke:#b400ff,stroke-width:2px,color:#d0eeff
     style Ollama fill:#051e14,stroke:#00ff88,stroke-width:1px,color:#d0eeff
     style Groq fill:#1f1f1f,stroke:#00f5ff,stroke-width:1px,color:#d0eeff
-⚙️ Feature Matrix ComparisonOperational MetricLocal Edge RuntimeEnterprise Cloud RuntimePrimary EngineOllama Engine (Native Host Daemon)Groq LPU Compute HardwareToken Cost100% Free / Absolute Zero BillingScaled Developer Tier FrameworkPrivacy ProfileSandbox Isolation (Data never leaves machine)Processed via TLS Encrypted Cloud EndpointsHardware SourceLocal Host CPU / Integrated VRAMMassively Parallel Data-Center GPUsPrimary Use CaseOffline Code Generation & Secure DiagnosticsHigh-Speed Context Processing & Complex Logic📂 Production Repository Layoutnexus-hybrid-terminal/
+⚙️ Feature Matrix Comparison
+Operational Metric	Local Edge Runtime	Enterprise Cloud Runtime
+Primary Engine	Ollama Engine (Native Host Daemon)	Groq LPU Compute Hardware
+Token Cost	100% Free / Absolute Zero Billing	Scaled Developer Tier Framework
+Privacy Profile	Sandbox Isolation (Data never leaves machine)	Processed via TLS Encrypted Cloud Endpoints
+Hardware Source	Local Host CPU / Integrated VRAM	Massively Parallel Data-Center GPUs
+Primary Use Case	Offline Code Generation & Secure Diagnostics	High-Speed Context Processing & Complex Logic
+📂 Production Repository Layout
+nexus-hybrid-terminal/
 ├── app.py                  # Production Hybrid Streamlit Dashboard Architecture
 ├── Dockerfile              # Multi-Stage Container Layer Blueprint
 ├── requirements.txt        # Isolated Python Interface Dependencies
 ├── dashboard-success.png   # Operational streaming success layout asset
 ├── error-diagnostics.png   # Defensive error intercept visual asset
 └── README.md               # Main Systems Architecture Documentation
-🚀 Rapid Deployment SetupStep 1 — Initialize Your Local Engine CoreEnsure Ollama is active on your host computer and download a consumer-optimized edge model:Bashollama run llama3.2:1b
-Step 2 — Compile the Isolated Container LayerBuild your optimized application layer image:Bashdocker build -t vllm-nexus .
-Step 3 — Spin Up the Hybrid Interface TerminalExecute the runtime sequence to map incoming web traffic seamlessly to Port 80:Bashdocker run --rm --name nexus-app \
+🚀 Rapid Deployment Setup
+Step 1 — Initialize Your Local Engine Core
+Ensure Ollama is active on your host computer and download a consumer-optimized edge model:
+
+Bash
+ollama run llama3.2:1b
+Step 2 — Compile the Isolated Container Layer
+Build your optimized application layer image:
+
+Bash
+docker build -t vllm-nexus .
+Step 3 — Spin Up the Hybrid Interface Terminal
+Execute the runtime sequence to map incoming web traffic seamlessly to Port 80:
+
+Bash
+docker run --rm --name nexus-app \
   -p 80:80 \
   --entrypoint streamlit \
   vllm-nexus:latest run app.py --server.port 80 --server.address 0.0.0.0 --server.headless true
-👨‍💻 Engineering Core InfoDeveloped by Subash Patra Associate Cloud Engineer
+👨‍💻 Engineering Core Info
+Developed by Subash Patra Associate Cloud Engineer
