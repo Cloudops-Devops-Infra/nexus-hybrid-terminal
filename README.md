@@ -59,5 +59,4 @@ Step 3 — Spin Up the Hybrid Interface TerminalExecute the runtime sequence to 
   -p 80:80 \
   --entrypoint streamlit \
   vllm-nexus:latest run app.py --server.port 80 --server.address 0.0.0.0 --server.headless true
-
-Developed by Subash Patra - Associate Cloud Engineer.
+👨‍💻 Engineering Core InfoDeveloped by Subash Patra Associate Cloud Engineer
