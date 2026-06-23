@@ -55,7 +55,6 @@ The infrastructure isolates the frontend environment entirely within a secure Do
    │   - qwen2:0.5b        │                       │                       │
    └───────────────────────┘                       └───────────────────────┘
 =========================================================================================
-
 ⚙️ Feature Matrix ComparisonOperational MetricLocal Edge RuntimeEnterprise Cloud RuntimePrimary EngineOllama Engine (Native Host Daemon)Groq LPU Compute HardwareToken Cost100% Free / Absolute Zero BillingScaled Developer Tier FrameworkPrivacy ProfileSandbox Isolation (Data never leaves machine)Processed via TLS Encrypted Cloud EndpointsHardware SourceLocal Host CPU / Integrated VRAMMassively Parallel Data-Center GPUsPrimary Use CaseOffline Code Generation & Secure DiagnosticsHigh-Speed Context Processing & Complex Logic📂 Production Repository Layoutnexus-hybrid-terminal/
 ├── Screenshorts/           # Internal repository visualization storage
 │   ├── dashboard-success.png
